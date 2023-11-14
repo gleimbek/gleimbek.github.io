@@ -1,0 +1,1333 @@
+@charset "utf-8";
+
+/* CSS Reset */
+body, header, img, nav, div, ul, li, h4, a, .search-bar, .logo, .user-options {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Styles rules for the body */
+body {
+    font-family: 'Goudy Bookletter 1911', sans-serif;
+}
+
+/* Styles rules for header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #F7F7E4;
+    color: black;
+}
+
+.logo img {
+    width: 180px; 
+    margin-right: 100px;
+}
+
+/* Styles rules for menu */
+nav {
+    text-align: center; 
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* Styles rules for search-bar */
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.search-bar input[type="text"] {
+    padding: 3px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.search-bar button {
+    background-color: #539E45;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-weight: bold;
+    font-size: 20px;
+	border-radius:4px;
+}
+
+/* Styles rules for buttons in the upper right corner */
+header .user-options {
+    margin-left: auto;
+}
+
+.user-options .submenu {
+    display: none;
+}
+
+.user-options {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    padding: 5px;
+}
+
+.user-options img {
+    margin-top: -5px;
+}
+
+.user-options nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.user-options nav li {
+    font-size: 20px;
+}
+
+.user-options nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.user-options button{
+	color:white;
+	background-color:#519E44;
+	padding:6px;
+	font-family: 'Goudy Bookletter 1911', serif;
+	font-size: 20px;
+	border-radius:5px;
+	font-weight:bold;
+	border:none;
+	margin-top:-10px;
+}
+
+.user-options a:hover {
+    color: red;
+}
+
+.user-options button:hover {
+    color: red;
+}
+
+.cart {
+    width: 30px;
+}
+
+
+/* Styles rules for submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    border: 1px solid #ccc;
+    padding: 10px;
+    padding-left: 0;
+    z-index: 2;
+}
+
+.submenu li a {
+    color: white;
+    text-align: left;
+}
+
+.submenu li {
+    color: white;
+    text-align: left;
+}
+
+li:hover .submenu {
+    display: block;
+    text-align: left;
+}
+
+.submenu a {
+    color: white; 
+}
+
+.submenu a:hover {
+    color: red;
+}
+
+/* Styles rules for footer */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+	text-align:center;
+}
+
+.footer-text h3{
+	font-family:'Roboto Light', sans-serif;
+	width: 200px;
+	margin-left:30px;
+	font-size:14px;
+	text-align:left;
+	line-height:20px;
+	margin-top:20px;
+}
+
+.site{
+	width:200px;
+	margin-left:70px;
+	margin-right:30px;
+	color:#F7C161;
+}
+
+.site a{
+	font-family:'Goudy Bookletter 1911', serif;
+	text-decoration:none;
+	font-weight:bold;
+	line-height:10px;
+	color:black;
+	text-align:left;
+}
+
+.site h2{
+	text-align:left;
+}
+
+.site a:hover {
+    color: red; 
+}
+
+.follow{
+	width:280px;
+	margin-right:20px;
+}
+
+.follow h2 {
+  display:flex;
+  text-align:center;
+  color:#F7C161;
+  margin-bottom:10px;
+}
+
+.follow-item{
+	display:flex;
+}
+
+.follow p{
+	font-family:'Roboto Regular', sans-serif;
+	font-size:14px;
+	line-height:5px;
+	margin-left:10px;
+}
+
+.follow img{
+	max-width: 8%;
+    height: 8%;
+}
+
+.follow a{
+	text-decoration:none;
+	color:black;
+}
+
+.footer-logo img{
+	margin-top:20px;
+	margin-right:30px;
+	margin-left:-120px;
+	margin-bottom:2px;
+	width: 180px;
+    height: auto;
+}
+
+.footer-logo p{
+	text-align:center;
+	margin-left:-180px;
+	margin-top:5px;
+	font-family:'Roboto Regular', sans-serif;
+	font-size:10px;
+}
+
+.footer-logo a{
+	text-decoration:none;
+	margin-top:-6px;
+}
+
+.contact {
+	text-align:center;
+	margin-right:30px;
+}
+
+.contact img{
+	max-width:30%;
+    height: auto;
+	margin-left:20px;
+}
+
+.contact h2 {
+	grid-column: span 2;
+	color:#F7C161;
+}
+
+.contact-item {
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    align-items: center; 
+	width:545px;
+}
+
+.contact-item p {
+    font-family:'Roboto Regular', sans-serif;
+	font-size:14px;
+	text-align:left;
+	margin-left:-50px;
+}
+
+
+/* Styles rules for Index Page*/
+#content-container {
+    display: flex;
+    justify-content: space-between; 
+	align-items:flex-start;
+	margin-bottom:0;
+}
+
+	/*Styles rules for resources column */
+	.resources {
+		text-align: center;
+		width: 15%; 
+		top: 0;
+		margin-left:30px;
+	}
+
+	.resource {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px; 
+	}
+	
+	.resources h2 {
+		background-color:#f16124;
+		color:white;
+		letter-spacing:2px;
+		border-radius:5px;
+	}
+
+	.resource img {
+		max-width: 100px; 
+		margin-right: 10px; 
+		padding-bottom: 4%;
+	}
+
+	.button {
+		background-color: green;
+		border-radius: 5px;
+		margin-left: 10px;
+		margin-right:20px;
+		text-align: center;
+		padding: 5%;
+		width: 42%;
+		font-family:'Roboto Regular', sans-serif;
+		border:none;
+		text-decoration:none;
+		color: white;
+	}
+	
+	
+	/* Styles rules for gallery-container */
+	.gallery-index {
+		display: block;
+		width: 900px;
+		height: 800px;
+		overflow: hidden;
+		margin-top:20px;
+		margin-left:40px;
+		margin-right:40px;
+	}
+
+	.gallery-index ul {
+		display: flex;
+		padding: 0;
+		width: 400%;
+		animation: slide 16s linear infinite;
+	}
+
+	.gallery-index li {
+		width: 25%;
+		list-style: none;
+	}
+
+	.gallery-index img {
+		width: 100%;
+	}
+
+	@keyframes slide {
+		0% {margin-left: 0%;}
+		25% {margin-left: 0%;}
+    
+		30% {margin-left: -100%;}
+		55% {margin-left: -100%;}
+		
+		60% {margin-left: -200%;}
+		85% {margin-left: -200%;}
+		
+		90% {margin-left: -300%;}
+		100% {margin-left: -300%;}
+	}
+
+/* Styles rules for nutritional-tips column*/
+	.nutritional-tips {
+		width: 22%;
+		margin-right:30px;
+		text-align: left;
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	.tip {
+		display: flex;
+		align-items: center;
+		margin-top:-10px;
+	}
+
+	.bullet img {
+		width: 50px;
+		height: auto;
+		margin-right: 10px;
+	}
+
+	.tip p {
+		font-family: 'Roboto Regular', sans-serif;
+		font-size: 14px;
+		margin-bottom: 15px;
+		line-height:18px;
+	}
+
+	.nutritional-tips h2 {
+		background-color:#f16124;
+		color:white;
+		letter-spacing:2px;
+		border-radius:5px;
+		text-align:center;
+	}
+	
+	.tip-button{
+		background-color:#F7C161;
+		cursor: pointer;
+		font-family: "Roboto bold", sans-serif;
+		border-radius:8px;
+		color:black;
+		padding: 8px;
+		border: none;
+		font-weight:bold;
+		margin-left:180px;
+		text-decoration:none;
+	}
+	
+	.tip-button:hover {
+		color: red; 
+	}
+	
+	
+	/* Styles rules for Best sellers section*/
+	#bestseller {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		text-align: center;
+		background-color:#519E44;
+		margin-top:-320px;
+	}
+
+	.best-logo p {
+		font-size: 40px;
+		margin-right: 10px;
+		margin-left:50px;
+		background-color: #F7C161;
+		padding: 10px;
+		border-radius: 8px;
+		font-weight: bold;
+		width:200px;
+		text-align:left;
+	}
+
+	.best-logo img{
+		max-width: 350px;
+		height: auto;
+		margin-right:30px;
+		margin-left:180px;
+		margin-top:-220px;
+	}
+
+	.product1, .product2, .product3 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 400px;
+		margin-right:20px;
+	}
+
+	.product1 h2 {
+		font-family: 'Roboto Regular', sans-serif;
+		font-size: 24px;
+		background-color: darkred;
+		color: white;
+		padding:5px;
+		margin-top: -3px;
+		width:280px;
+	}
+
+	.product1 img,.product2 img, .product3 img  {
+		padding-top:15px;
+		width: 290px;
+	}
+
+	.product1 p, .product2 p, .product3 p {
+		font-size: 16px;
+		margin:auto;
+		font-family: 'Roboto Regular Light', sans-serif;
+		color:white;
+		text-align:center;
+	
+	}
+	
+	.product1 p, .product2 p{
+		padding-left:45px;
+		padding-right:45px;
+	}
+	
+	.product3 p{
+		padding-left:35px;
+		padding-right:35px;
+	}
+
+	.product2 h2 {
+		font-family: 'Roboto Regular', sans-serif;
+		font-size: 24px;
+		background-color:darkorange;
+		color: white;
+		padding:5px;
+		margin-top: -3px;
+		width:280px;
+	}
+
+	.product3 h2 {
+		font-family: 'Roboto Regular', sans-serif;
+		font-size: 24px;
+		background-color:#FBC11E;
+		color: white;
+		padding:5px;
+		margin-top: -3px;
+		width:280px;
+	}
+
+	.see-product-button {
+		background-color:#F7C161;
+		color:black;
+		padding: 5px;
+		border: none;
+		cursor: pointer;
+		font-family: "Roboto bold", sans-serif;
+		border-radius:8px;
+		margin-top:10px;
+		margin-bottom:15px;
+		font-weight:bold;
+	}
+
+	.see-product-button:hover {
+		color: red; 
+	}
+
+/* Styles rules for About Us Page*/
+	
+	/*Styles rules for about-container */
+	#about-container {
+		display: flex;
+		flex-wrap:nowrap;
+		justify-content: space-between;
+	}
+
+	.photo img {
+		margin-top:20px;
+		width: 350px;
+		height: 550px;
+		margin-left:30px;
+		margin-bottom:20px;
+	}
+	
+	.about-column{
+		flex: 1; 
+		background-color: #F7F7E4;
+		text-align: center;
+		margin-top:20px;
+		height: 550px;	
+		margin-left:30px;
+		margin-right:30px;
+		color:black;
+	}
+	
+	.about-column h2 {
+		font-size: 24px;
+		padding-top: 5px;
+	}
+	
+	.about-column p {
+		font-size: 14px;
+		padding: 15px;
+		font-family: 'Roboto Regular', sans-serif;
+		line-height: 1.7;
+		margin-top:-10px;
+		color:black;
+	}
+
+	/*Styles rules for team */
+	.team {
+		background-color: #519E44; 
+		padding: 10px; 
+		text-align: center; 
+	}
+
+	/* Styles rules for columns leader */
+	.leader {
+		display: flex;
+		justify-content:center;
+		clear:both;
+	}
+
+	h1 {
+		text-align: center;
+		color:white;
+		margin-top:-1px;
+		margin-bottom:-1px;
+	}
+
+	.leader > div{
+		background-color: black;
+		width: 20%;
+		margin:10px;
+		border: 1px solid #ccc;
+		font-family: 'Roboto Regular', sans-serif;
+		color: white;
+		display:flex;
+		flex-direction:column;
+	}
+
+	
+	.leader img {
+		width: 100px;
+		height: 200px;
+		margin-left:160px;
+		padding:10px;
+		margin-top:-20px;
+	}
+
+	.leader h2{
+		color: white;
+		text-align:center;
+		padding:5px;
+	}
+
+	.leader p{
+		font-size:12px;
+		width:145px;
+		margin-top:-210px;
+		line-height:17px;
+		margin-bottom:10px;
+		margin-left:10px;
+	}
+	
+	
+/* Styles rules for Services Page*/
+	
+	/*Styles rules for services-container */
+	#services-container {
+		display: flex;
+		flex-wrap:nowrap;
+		justify-content: space-between;
+	}
+
+	#services-container video {
+		margin-top:20px;
+		width: 1100px;
+		height: 550px;
+		margin-left:30px;
+		margin-bottom:20px;
+	}
+	
+	.certificate-column{
+		flex: 1; 
+		background-color: #F7F7E4;
+		text-align: center;
+		margin-top:20px;
+		height: 550px;	
+		margin-left:30px;
+		margin-right:30px;
+		color:black;
+	}
+	
+	.certificate-column h2 {
+		font-size: 24px;
+		padding-top: 5px;
+	}
+	
+	.certificate-column p {
+		font-size: 13px;
+		padding: 20px;
+		font-family: 'Roboto Regular', sans-serif;
+		line-height: 1.7;
+		color:black;
+	}
+	
+	/*Styles rules for services section*/	
+	.services {
+		background-color: #519E44; 
+		padding: 10px; 
+		text-align: center; 
+	}
+	
+	.distribution {
+		display: flex;
+		justify-content:center;
+		margin:10px;
+	}
+	
+	.distribution h2{
+		font-weight:bold;
+		background-color:black;
+		color:white;
+		width:400px;
+		height:36px;
+		margin-left:53px;
+		justify-content:space-between;
+		margin-top:-8px;
+		padding-top:2px;
+	}
+	
+	.distribution img{
+		width:400px;
+		height:200px;
+	}
+	
+	.distribution p{
+		font-family:'Roboto Regular', sans-serif;
+		color:white;
+		margin-right:60px;
+		margin-left:60px;
+		text-align:center;
+		margin-top:-12px;
+		line-height:24px;
+	}
+	
+	.distribution h2, .qa h2, .samples  h2{
+		margin-right:53px;
+	}
+	
+	.button_service{
+		padding:10px;
+		font-size:16px;
+		background-color:#F7C161;
+		border-radius:8px;
+		text-decoration:none;
+		color:black;
+		font-family:'Roboto Regular', sans-serif;
+	}
+	
+	
+	.button_service:hover {
+		color: red; 
+	}
+	
+/* Styles rules for Products Page*/
+.products{
+	background-color:#519E44;
+	padding:10px;
+}
+
+	/* Styles rules for flavors section */
+	h3{
+		text-align:center;
+		font-family:'Goudy Bookletter 1911', serif;
+		font-size:35px;
+		padding-bottom:15px;
+		margin-top:15px;
+	}
+	
+	.flavors{
+		display: flex;
+		justify-content:center;
+		margin:20px;
+		margin-top:-20px;
+	}
+	
+	.flavors img{
+		width:420px;
+		height:auto;
+		margin-right:20px;
+		margin-left:40px;
+	}
+	
+	.flavors h2{
+		text-align:center;
+		font-family:'Goudy Bookletter 1911', serif;
+		background-color:black;
+		color:white;
+		margin-right:20px;
+		margin-left:40px;
+		margin-top:-7px;
+		padding:5px;
+		letter-spacing:2px;
+	}	
+	
+	.flavors p{
+		color:white;
+		font-family:'Roboto Regular', sans-serif;
+		text-align:left;
+		width:420px;
+		margin-right:10px;
+		margin-left:40px;
+		margin-top:-8px;
+	}
+	
+	.flavors button{
+		padding:8px;
+		font-size:14px;
+		background-color:#F7C161;
+		border-radius:8px;
+		border:0;
+		margin-bottom:25px;
+		float:right;
+		margin-right:23px;
+		margin-top:-12px;
+	}
+	
+	.flavors button a{
+		text-decoration:none;
+		color:black;
+		font-family:'Roboto Regular', sans-serif;
+	}
+	
+	.flavors button a:hover {
+		color: red; 
+	}
+	
+	.flavors1{
+		display: flex;
+		justify-content:center;
+		margin:55px;
+	}
+	
+	.flavors1 img{
+		width:420px;
+		height:auto;
+		margin-right:20px;
+		margin-left:40px;
+		margin-top:20px;
+	}
+	
+	.flavors1 h2{
+		text-align:center;
+		font-family:'Goudy Bookletter 1911', serif;
+		background-color:black;
+		color:white;
+		margin-right:20px;
+		margin-left:40px;
+		margin-top:-7px;
+		padding:5px;
+		letter-spacing:2px;
+	}	
+	
+	.flavors1 p{
+		color:white;
+		font-family:'Roboto Regular', sans-serif;
+		text-align:left;
+		width:420px;
+		margin-right:10px;
+		margin-left:40px;
+		margin-top:-8px;
+	}
+	
+	.button_buy{
+		padding:10px;
+		font-size:16px;
+		background-color:#F7C161;
+		border-radius:8px;
+		text-decoration:none;
+		color:black;
+		font-family:'Roboto Regular', sans-serif;
+		float:right;
+		margin-right:20px;
+		margin-bottom:-20px;
+	}
+	
+	.button_product{
+		padding:10px;
+		font-size:16px;
+		background-color:#F7C161;
+		border-radius:8px;
+		text-decoration:none;
+		color:black;
+		font-family:'Roboto Regular', sans-serif;
+		float:right;
+		margin-right:20px;
+		margin-bottom:-20px;
+	}
+	
+	.button_buy:hover {
+		color: red; 
+	}
+	
+	.button_product:hover {
+		color: red; 
+	}
+	
+	
+	/* Styles rules for gallery-container */
+	.gallery-products {
+		display: block;
+		height: 655px;
+		overflow: hidden;
+	}
+
+	.gallery-products ul {
+		display: flex;
+		padding: 0;
+		width: 400%;
+		animation: slide 16s linear infinite;
+	}
+
+	.gallery-products li {
+		width: 25%;
+		list-style: none;
+	}
+
+	.gallery-products img {
+		width: 100%;
+	}
+
+	@keyframes slide {
+		0% {margin-left: 0%;}
+		25% {margin-left: 0%;}
+    
+		30% {margin-left: -100%;}
+		55% {margin-left: -100%;}
+		
+		60% {margin-left: -200%;}
+		85% {margin-left: -200%;}
+		
+		90% {margin-left: -300%;}
+		100% {margin-left: -300%;}
+	}
+
+/* Styles rules for Ingredients Page*/
+.ing-image img{
+	max-width:100%;
+	height:auto;
+}
+
+.concentrate{
+	padding:15px;
+	background: linear-gradient(to bottom, #FFEFE8,#FFFFFF,#FFEFE8); 
+	margin-top:-7px;
+}
+
+.ing-header h3{
+	margin-top:10px;
+	font-family:'Roboto Regular', sans-serif;
+	color: #257311;
+	font-size:60px;
+}
+
+.ing-header p{
+	font-family:'Roboto Regular', sans-serif;
+	text-align:center;
+	margin-top:-70px;
+	margin-bottom:40px;
+}
+
+.ing-data{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-left:50px;
+}
+
+.ing-data img{
+	width:65%;
+	height:auto;
+	border-radius:70px;
+	border:0.5px solid #ccc;		
+}
+
+.ing-data p{
+	font-family:'Roboto Regular', sans-serif;
+	text-align:center;
+	margin-left:-70px;	
+	font-weight:bold;
+	margin-top:-2px;
+	
+}
+
+.catalog img{
+	width:90%;
+	height:auto;
+	border:none;
+	border-radius:initial;
+	transform: rotate(15deg);
+	margin-top:-60px;
+}
+
+.catalog p{
+	margin-top:-10px;
+	background-color:#F7C161;
+	padding:8px;
+	border-radius:8px;
+	width:150px;
+	margin-left:10px;
+	color:black;
+}
+
+
+/* Styles rules for Blog Page */
+
+.blog-container{
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
+}
+
+.menu-blog{
+	width:22%;
+}
+
+.menu-blog h3{
+	font-family:'Roboto Regular', sans-serif;
+	text-align:center;
+	font-size:22px;
+}
+
+.menu-blog p{
+	font-family:'Roboto Regular', sans-serif;
+	text-align:center;
+	font-size:16px;
+	margin-top:-30px;
+	font-style:italic;
+}
+
+.email-blog p{
+	margin-top:40px;
+	text-align:left;
+	margin-left:20px;
+	margin-bottom:-20px;
+	font-family:'Roboto Regular', sans-serif;
+	font-size:14px;
+	font-style:none;
+}
+
+.email-blog input{
+	width:310px;
+	height:30px;
+	margin-bottom:10px;
+	margin-top:-50px;
+}
+
+.email-blog button{
+	margin-bottom:50px;
+	margin-top:5px;
+	margin-left:120px;
+	padding:10px;
+	background-color: #F74040;
+	font-family:'Roboto Regular', sans-serif;
+	color:white;
+	border-radius:8px;
+	font-size:14px;
+	border:none;
+	cursor:pointer;
+}
+
+
+
+.content-blog{
+	margin-left:20px;
+	text-align:center;
+	background-color:#F7D3AF;
+	border-radius:8px;
+	
+}
+
+.content-blog h2{
+	background-color:#F7C161;
+	width:100%;
+	border-radius:8px;
+	margin-bottom:10px;
+	margin-top:15px;
+	color:white;
+	letter-spacing: 2px;
+}
+
+.content-blog h4{
+	font-size:18px;
+	font-family:'Roboto Regular', sans-serif;
+	margin-top:10px;
+
+}
+
+
+
+.content-blog ul{
+	margin-left:15px;
+	text-align:left;
+	line-height:30px;
+	font-family:'Roboto Regular', sans-serif;
+	padding:30px;
+	font-size:18px;
+}
+
+.content-blog li a{
+	text-decoration:none;
+	color:black;
+}
+
+.publi-blog{
+	display:flex-direction;
+	flex-direction:row;
+	width:76%;
+	margin-top:10px;
+}
+
+.title-blog{
+	display:flex;
+	flex-direction:row;
+	background-color:#F7F6E3;
+	margin-bottom:20px;
+	
+}
+
+#blogt{
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+}
+
+#blogt h3{
+	padding:30px;	
+	margin-left:45px;
+	margin-right:45px;
+	margin-top:30px;
+}
+
+#blogt h1{
+	font-family:'Roboto Regular', sans-serif;
+	color:black;
+	font-size:80px;
+	font-style:italic;
+	margin-top:-60px;
+}
+
+.title-blog img{
+	width:950px;	
+	height:auto;
+}
+
+.blog-resumen{
+	background-color:#519E44;
+	display: flex;  
+}
+
+.blog-resumen > div {
+	flex: 1; 
+	padding: 15px; 
+	box-sizing: border-box; 
+}
+
+
+.resume1-img {
+	display: flex;
+	align-items: center; /* Centra verticalmente los elementos */
+}
+
+.resume1-img img {
+	max-width: 150px;
+	height: auto;
+	margin-right: 10px;
+	margin-left: 15px;  /* Añade espacio entre la imagen y el texto si es necesario */
+}
+
+.resume1-img p{
+	font-family:'Roboto Regular', sans-serif;
+	margin-left:10px;
+	margin-right:10px;
+	color:white;
+	font-style:italic;
+	margin-top:-5px;
+	line-height:22px;
+}
+
+.resume1-img h2{
+	font-family:'Roboto Regular', sans-serif;
+	font-size:25px;
+	color:white;
+	background-color:black;
+	text-align: center;
+	margin-right:20px;
+	margin-top:-5px;
+}
+
+.resume1-img button{
+	cursor:pointer;
+	float:right;
+	margin-right:30px;
+	padding:5px;
+	background-color:#F7C161;
+	color:white;
+	font-family:'Roboto Regular', sans-serif;
+	border-radius:8px;
+	border:none;
+	margin-top:-20px;
+	
+}
+
+.resume1-img button:hover{
+	color:red;
+}
+
+
+/* Styles rules for Contact Us Page */
+.uscontent img{
+	width:1520px;
+	height:auto;
+}
+
+.usform{
+	display:flex;
+	flex-direction:row;
+}
+
+.ustext {
+	margin-top:50px;
+	font-family:'Roboto Regular', sans-serif;
+	margin-left:30px;
+	margin-right:30px;
+	width:400px;
+}
+
+.ustext h2{
+	text-align:center;
+	font-size:30px;
+}
+
+.ustext p{
+	text-align:left;
+	line-height:22px;
+}
+
+.usinfo{
+	background-color: #519E44;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.usinfo h2{
+	font-family:'Roboto Regular', sans-serif;
+	text-align:center;
+	font-style:italic;
+	margin-top:5px;
+}
+
+.uscontact{
+	display:flex;
+	flex-direction:row;
+	font-family:'Roboto Regular', sans-serif;	
+}
+
+.uscontact input{
+	height:20px;
+}
+
+.usdata h4{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+#fName{
+	margin-bottom:10px;
+	margin-right:30px;
+}
+
+#lName{
+	margin-bottom:20px;
+	margin-right:30px;
+}
+
+#email{
+	margin-bottom:20px;
+	margin-right:30px;
+}
+
+#phone{
+	margin-right:30px;
+}
+
+.usmessage p{
+	margin-top:5px;
+}
+
+.usmessage textarea{
+	margin-top:-10px;
+}
+
+.usbutton{
+	padding:10px;
+	font-size:16px;
+	background-color:#F7C161;
+	border-radius:8px;
+	text-decoration:none;
+	color:black;
+	font-family:'Roboto Regular', sans-serif;
+	float:right;
+	margin-right:10px;
+	margin-top:-30px;
+}
+	
+.usbutton:hover {
+	color: red; 
+}
+	
+.usaddress h4{
+	font-family:'Roboto Regular', sans-serif;
+	text-align:center;
+	margin-bottom:10px;
+	
+}
+
+.usmap{
+	margin-left:40px;
+	width: 350px; 
+	height: 330px;
+	border:2 solid black;
+}
